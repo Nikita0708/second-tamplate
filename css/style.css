@@ -1,0 +1,134 @@
+:root {
+  --black-color: #000000;
+  --orange-color: #f85a47;
+  --grey-color: #545a58;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--white-color);
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.logo {
+  font-weight: 800;
+  font-size: 23px;
+  line-height: calc(31 / 23);
+  color: var(--black-color);
+}
+/*-----------------------HEADER------------------*/
+.header {
+  padding-top: 34px;
+}
+.header .container {
+  display: flex;
+}
+.header-list {
+  display: flex;
+  margin-left: auto;
+}
+.header-link {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: calc(17 / 13);
+  color: var(--black-color);
+}
+.home {
+  border-bottom: 1px solid var(--black-color);
+}
+.header-item:not(:last-child) {
+  margin-right: 46px;
+}
+/*-----------------------HERO------------------*/
+.hero {
+  padding-top: 117px;
+}
+.hero .container {
+  position: relative;
+}
+.hero-thumb {
+  display: flex;
+}
+.hero-img {
+  position: absolute;
+  top: 0;
+  right: -67px;
+  z-index: -1;
+}
+.hero-top-text {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: calc(29 / 22);
+  color: #ff9900;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.hero-title {
+  width: 484px;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 1.35;
+  color: var(--black-color);
+  margin-bottom: 23px;
+}
+.hero-bottom-text {
+  width: 499px;
+  font-size: 17px;
+  line-height: calc(23 / 17);
+  letter-spacing: 0.01em;
+  color: #31353b;
+  margin-bottom: 48px;
+}
+.hero-input {
+  width: 568px;
+  height: 86px;
+  border: 1px solid #dadada;
+  background-color: #ffffff;
+  padding-left: 20px;
+  color: #31353b;
+  opacity: 0.3;
+}
+.hero-input::placeholder {
+  color: #31353b;
+  opacity: 0.3;
+}
+.hero-btn {
+  width: 188px;
+  height: 86px;
+  color: var(--orange-color);
+}
