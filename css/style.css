@@ -68,9 +68,11 @@ ol {
   font-size: 13px;
   line-height: calc(17 / 13);
   color: var(--black-color);
+  transition: color 250ms linear;
 }
-.home {
-  border-bottom: 1px solid var(--black-color);
+.header-link:hover,
+.header-link:focus {
+  color: var(--orange-color);
 }
 .header-item:not(:last-child) {
   margin-right: 46px;
@@ -147,6 +149,7 @@ ol {
   font-weight: 600;
   font-size: 17px;
   line-height: calc(23 / 17);
+  cursor: pointer;
 }
 .hero-partners-text {
   margin-top: 145px;
@@ -281,6 +284,11 @@ ol {
   font-size: 19px;
   line-height: calc(26 / 19);
   color: var(--black-color);
+  transition: color 250ms linear;
+}
+.property-link:hover,
+.property-link:focus {
+  color: var(--orange-color);
 }
 .property-img-list {
   display: flex;
